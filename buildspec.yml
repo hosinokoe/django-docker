@@ -11,7 +11,7 @@ phases:
     commands:
       - echo Build started on `date`
       - echo Building the Docker image...
-      - ./docker-compose.sh
+      - ./docker-compose.sh dev up --build
   post_build:
     commands:
       - echo Build completed on `date`
